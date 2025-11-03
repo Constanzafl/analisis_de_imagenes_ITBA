@@ -1,0 +1,5 @@
+[theme]
+backgroundColor = "#000000"
+textColor = "#FFFFFF"   # blanco para que contraste
+primaryColor = "#1E90FF" # azul o el color que quieras para los botones
+secondaryBackgroundColor = "#111111"
