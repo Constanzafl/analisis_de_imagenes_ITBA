@@ -13,7 +13,7 @@ from PIL import Image
 st.set_page_config(page_title="Filtro Bilateral", layout="wide")
 
 st.title("🛰️ Filtro Bilateral - Análisis Comparativo")
-st.markdown("")
+st.markdown("Implementar el filtro bilateral y aplicarlo a imágenes y sus versiones contaminadas. Analizar los resultados y comparar con el filtro de Gauss y con el filtro de la mediana.")
 
 # ============= FUNCIONES =============
 
