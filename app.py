@@ -51,7 +51,7 @@ seccion = st.sidebar.radio(
 st.sidebar.markdown("---")
 
 # Cargar imagen
-nombre_imagen = "imagensatelital.jpg"  # 🔧 CAMBIA ESTO
+nombre_imagen = "original.jpg"  # 🔧 CAMBIA ESTO
 
 try:
     image = Image.open(nombre_imagen)
