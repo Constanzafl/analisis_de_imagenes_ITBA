@@ -416,5 +416,6 @@ else:  # Sección 4: Comparación Final
 
 st.sidebar.markdown("---")
 st.sidebar.info("*Alumnas Florio y Sansone - Análisis de Imágenes Satelitales - ITBA*")
+st.sidebar.info("*Fuente de la imagen: Libreria imagen y video NASA* Archipelago Mozambique's Bazaruto https://images.nasa.gov/details/iss070e064005")
 
 
