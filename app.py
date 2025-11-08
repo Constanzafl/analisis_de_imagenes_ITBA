@@ -76,7 +76,8 @@ if seccion == "🔬 2. Ruido Gaussiano":
     
     st.sidebar.markdown("---")
     st.sidebar.markdown("### 🎯 Parámetros Bilateral")
-    d_bilateral = st.sidebar.slider("d (diámetro):", 5, 15, 9, 2)
+    #d_bilateral = st.sidebar.slider("d (diámetro):", 5, 15, 9, 2)
+    d_bilateral = 9
     sigma_color = st.sidebar.slider("σr (color):", 30, 100, 75, 5)
     sigma_space = st.sidebar.slider("σs (espacio):", 30, 100, 75, 5)
     
@@ -92,7 +93,8 @@ elif seccion == "⚡ 3. Ruido Sal & Pimienta":
     
     st.sidebar.markdown("---")
     st.sidebar.markdown("### 🎯 Parámetros Bilateral")
-    d_bilateral = st.sidebar.slider("d (diámetro):", 5, 15, 9, 2)
+    #d_bilateral = st.sidebar.slider("d (diámetro):", 5, 15, 9, 2)
+    d_bilateral = 9
     sigma_color = st.sidebar.slider("σr (color):", 30, 100, 75, 5)
     sigma_space = st.sidebar.slider("σs (espacio):", 30, 100, 75, 5)
     
@@ -113,7 +115,8 @@ elif seccion == "📊 4. Comparación Final":
     
     st.sidebar.markdown("---")
     st.sidebar.markdown("### 🎯 Parámetros Bilateral")
-    d_bilateral = st.sidebar.slider("d (diámetro):", 5, 15, 9, 2)
+    #d_bilateral = st.sidebar.slider("d (diámetro):", 5, 15, 9, 2)
+    d_bilateral = 9
     sigma_color = st.sidebar.slider("σr (color):", 30, 100, 75, 5)
     sigma_space = st.sidebar.slider("σs (espacio):", 30, 100, 75, 5)
     
