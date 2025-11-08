@@ -76,7 +76,7 @@ if seccion == "🔬 2. Ruido Gaussiano":
     
     st.sidebar.markdown("---")
     st.sidebar.markdown("### 🎯 Parámetros Bilateral")
-    #d_bilateral = st.sidebar.slider("d (diámetro):", 5, 15, 9, 2)
+    d_bilateral = st.sidebar.slider("d (diámetro):", 5, 15, 9, 2)
     sigma_color = st.sidebar.slider("σr (color):", 30, 100, 75, 5)
     sigma_space = st.sidebar.slider("σs (espacio):", 30, 100, 75, 5)
     
@@ -191,7 +191,7 @@ elif seccion == "🔬 2. Ruido Gaussiano":
     noisy = add_gaussian_noise(img_rgb, sigma_noise)
     
     # Aplicar filtros
-    bilateral = cv2.bilateralFilter(noisy, d_bilateral, sigma_color, sigma_space)
+    bilateral = cv2.bilateralFilter(noisy,  sigma_color, sigma_space) #d_bilateral,
     gauss = gaussian_rgb(noisy, sigma_gauss)
     median = median_rgb(noisy, kernel_median)
     
