@@ -76,7 +76,7 @@ if seccion == "🔬 2. Ruido Gaussiano":
     
     st.sidebar.markdown("---")
     st.sidebar.markdown("### 🎯 Parámetros Bilateral")
-    d_bilateral = st.sidebar.slider("d (diámetro):", 5, 15, 9, 2)
+    #d_bilateral = st.sidebar.slider("d (diámetro):", 5, 15, 9, 2)
     sigma_color = st.sidebar.slider("σr (color):", 30, 100, 75, 5)
     sigma_space = st.sidebar.slider("σs (espacio):", 30, 100, 75, 5)
     
@@ -216,7 +216,7 @@ elif seccion == "🔬 2. Ruido Gaussiano":
         
     with col2:
         st.markdown("**Bilateral** ⭐")
-        st.image(bilateral, caption=f"d={d_bilateral}, σr={sigma_color}, σs={sigma_space}", 
+        st.image(bilateral, caption=f" σr={sigma_color}, σs={sigma_space}",      #d={d_bilateral},
                  use_container_width=True)
         st.caption("✅ Reduce ruido + preserva bordes")
         
@@ -268,7 +268,7 @@ elif seccion == "⚡ 3. Ruido Sal & Pimienta":
         
     with col2:
         st.markdown("**Bilateral**")
-        st.image(bilateral, caption=f"d={d_bilateral}, σr={sigma_color}, σs={sigma_space}", 
+        st.image(bilateral, caption=f" σr={sigma_color}, σs={sigma_space}",    #d={d_bilateral},
                  use_container_width=True)
         st.caption("⚠️ Reduce pero no elimina")
         
@@ -294,37 +294,7 @@ else:  # Sección 4: Comparación Final
     st.markdown("---")
     st.markdown("## Comparación Final: Bilateral vs Otros Filtros")
     
-    # # Aplicar el ruido elegido
-    # if tipo_ruido == "Gaussiano":
-    #     noisy = add_gaussian_noise(img_rgb, sigma_noise)
-    # else:
-    #     noisy = add_salt_pepper(img_rgb, p_noise)
-    
-    # # Aplicar filtros
-    # bilateral = cv2.bilateralFilter(noisy, d_bilateral, sigma_color, sigma_space)
-    # gauss = gaussian_rgb(noisy, sigma_gauss)
-    # median = median_rgb(noisy, kernel_median)
-    
-    # # Mostrar comparación de imágenes
-    # st.markdown(f"### Resultados con Ruido {tipo_ruido}")
-    
-    # col1, col2, col3, col4 = st.columns(4)
-    
-    # with col1:
-    #     st.markdown("**Original**")
-    #     st.image(img_rgb, use_container_width=True)
-        
-    # with col2:
-    #     st.markdown("**Con Ruido**")
-    #     st.image(noisy, use_container_width=True)
-        
-    # with col3:
-    #     st.markdown("**Bilateral**")
-    #     st.image(bilateral, use_container_width=True)
-        
-    # with col4:
-    #     st.markdown("**Gaussiano**")
-    #     st.image(gauss, use_container_width=True)
+
     
     st.markdown("---")
     
