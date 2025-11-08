@@ -191,7 +191,7 @@ elif seccion == "🔬 2. Ruido Gaussiano":
     noisy = add_gaussian_noise(img_rgb, sigma_noise)
     
     # Aplicar filtros
-    bilateral = cv2.bilateralFilter(noisy,  sigma_color, sigma_space) #d_bilateral,
+    bilateral = cv2.bilateralFilter(noisy, d_bilateral, sigma_color, sigma_space) 
     gauss = gaussian_rgb(noisy, sigma_gauss)
     median = median_rgb(noisy, kernel_median)
     
